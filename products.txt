@@ -1,0 +1,108 @@
+<section class="products-section">
+    <h2 class="section-title">Our Exclusive Collection</h2>
+    <p>Explore our growing line of premium pieces, ceremonial looks, and culturally inspired outfits.</p>
+
+    <div class="products-grid">
+
+        <div class="product-card">
+            <div class="image-container">
+                <img src="images/VEST IN .png" alt="Royal Gown">
+            </div>
+            <h3>Royal Gown</h3>
+            <p class="category">Evening Wear</p>
+            <p class="price">$250</p>
+            <button onclick="viewProduct('Royal Gown')">View Details</button>
+        </div>
+
+        <div class="product-card">
+            <div class="image-container">
+                <img src="images/righy.png" alt="Classic Suit">
+            </div>
+            <h3>Classic Suit</h3>
+            <p class="category">Menswear</p>
+            <p class="price">$300</p>
+            <button onclick="viewProduct('Classic Suit')">View Details</button>
+        </div>
+
+        <div class="product-card">
+            <div class="image-container">
+                <img src="images/COMPLETE.png" alt="Complete Outfit">
+            </div>
+            <h3>Complete Outfit</h3>
+            <p class="category">Premium Collection</p>
+            <p class="price">$980</p>
+            <button onclick="viewProduct('Complete Outfit')">View Details</button>
+        </div>
+
+        <div class="product-card">
+            <div class="image-container">
+                <img src="images/unrelistic.jpg" alt="Unrealistic Attires">
+            </div>
+            <h3>Unrealistic Attires</h3>
+            <p class="category">Accessories</p>
+            <p class="price">$1100</p>
+            <button onclick="viewProduct('Unrealistic Attires')">View Details</button>
+        </div>
+
+        <div class="product-card">
+            <div class="image-container">
+                <img src="images/africa black.jpeg" alt="Africa Black Collection">
+            </div>
+            <h3>Africa Black</h3>
+            <p class="category">Cultural Luxury</p>
+            <p class="price">$720</p>
+            <button onclick="viewProduct('Africa Black')">View Details</button>
+        </div>
+
+        <div class="product-card">
+            <div class="image-container">
+                <img src="images/africa wear.jpeg" alt="Africa Wear Collection">
+            </div>
+            <h3>Africa Wear</h3>
+            <p class="category">Traditional Fashion</p>
+            <p class="price">$680</p>
+            <button onclick="viewProduct('Africa Wear')">View Details</button>
+        </div>
+
+        <div class="product-card">
+            <div class="image-container">
+                <img src="images/asian white.jpeg" alt="Asian White Collection">
+            </div>
+            <h3>Asian White</h3>
+            <p class="category">Formal Couture</p>
+            <p class="price">$850</p>
+            <button onclick="viewProduct('Asian White')">View Details</button>
+        </div>
+
+        <div class="product-card">
+            <div class="image-container">
+                <img src="images/coronation.jpeg" alt="Coronation Outfit">
+            </div>
+            <h3>Coronation</h3>
+            <p class="category">Ceremonial Wear</p>
+            <p class="price">$1250</p>
+            <button onclick="viewProduct('Coronation')">View Details</button>
+        </div>
+
+        <div class="product-card">
+            <div class="image-container">
+                <img src="images/Embroidery Dress Diy.jpg.jpeg" alt="Embroidery Dress">
+            </div>
+            <h3>Embroidery Dress</h3>
+            <p class="category">Luxury Dresses</p>
+            <p class="price">$540</p>
+            <button onclick="viewProduct('Embroidery Dress')">View Details</button>
+        </div>
+
+        <div class="product-card">
+            <div class="image-container">
+                <img src="images/india.jpeg" alt="India Collection">
+            </div>
+            <h3>India Collection</h3>
+            <p class="category">Global Style</p>
+            <p class="price">$790</p>
+            <button onclick="viewProduct('India Collection')">View Details</button>
+        </div>
+
+    </div>
+</section>

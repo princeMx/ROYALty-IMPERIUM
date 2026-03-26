@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROYALty IMPERIUM | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<marquee>Upcoming Events: Royal Runway Show on April 20 | Style Consultation Week opens May 3 | Book your fitting today</marquee>
+
+<header>
+    <div class="logo">
+        <img src="images/logo.png" alt="ROYALty IMPERIUM logo">
+        <h1>ROYALty IMPERIUM</h1>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="trustees.html">Board</a>
+        <a href="appointments.html">Appointments</a>
+        <a href="events.html">Events</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-box">
+        <img src="images/download.jpg" alt="Fashion model in premium wear">
+        <div class="overlay">
+            <h2>Be Your</h2>
+            <p>Own your presence with bold couture.</p>
+            <button onclick="showMessage('Welcome to ROYALty IMPERIUM, an upcoming fashion house built for elegance.')">Learn More</button>
+        </div>
+    </div>
+
+    <div class="hero-box">
+        <img src="images/righy.png" alt="Featured signature outfit">
+        <div class="overlay">
+            <h2>Royal</h2>
+            <p>Discover our signature collection.</p>
+            <button onclick="goToPage('products.html')">Shop Styles</button>
+        </div>
+    </div>
+
+    <div class="hero-box">
+        <img src="images/africa black.jpeg" alt="Africa Black fashion highlight">
+        <div class="overlay">
+            <h2>Self</h2>
+            <p>Step into your next statement look.</p>
+            <button onclick="goToPage('events.html')">View Events</button>
+        </div>
+    </div>
+</section>
+
+<section class="intro">
+    <h2>About The Fashion House</h2>
+    <p>ROYALty IMPERIUM is an upcoming fashion house focused on elegant outfits, premium accessories, and memorable runway experiences.</p>
+    <p>Use the navigation above to explore our product showcase, board of trustees, appointments page, and upcoming events.</p>
+    <button onclick="showDate()">Show Today's Date</button>
+    <p id="today-display"></p>
+</section>
+
+<section class="intro">
+    <h2>DOM Structure</h2>
+    <pre id="dom-structure">
+Document
+|- html
+|  |- head
+|  \- body
+|     |- marquee
+|     |- header
+|     |  |- div.logo
+|     |  \- nav
+|     |- section.hero
+|     |- section.intro
+|     |- section.intro
+|     |- footer
+|     \- script
+    </pre>
+</section>
+
+<footer>
+    <p>&copy; 2026 ROYALty IMPERIUM</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

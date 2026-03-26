@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Board of Trustees - ROYALty IMPERIUM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- 🔥 MARQUEE -->
+<marquee>👑 Meet the Leaders Behind ROYALty IMPERIUM Fashion House 👑</marquee>
+
+<!-- 🔝 HEADER -->
+<header>
+    <h1>ROYALty IMPERIUM</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="trustees.html">Board</a>
+        <a href="appointments.html">Appointments</a>
+        <a href="events.html">Events</a>
+    </nav>
+</header>
+
+<!-- 👥 TRUSTEES SECTION -->
+<section class="trustees-section">
+    <h2 class="section-title">Board of Trustees</h2>
+
+    <div class="trustees-grid">
+
+        <!-- MEMBER 1 -->
+        <div class="trustee-card">
+            <div class="image-container">
+                <img src="images/member1.jpg" alt="Member 1">
+                <div class="overlay">
+                    <button onclick="viewMember('Michael Philip')">View Profile</button>
+                </div>
+            </div>
+            <h3>Michael Philip</h3>
+            <p class="role">Founder & Creative Director</p>
+        </div>
+
+        <!-- MEMBER 2 -->
+        <div class="trustee-card">
+            <div class="image-container">
+                <img src="images/member2.jpg" alt="Member 2">
+                <div class="overlay">
+                    <button onclick="viewMember('Ukereke Abba')">View Profile</button>
+                </div>
+            </div>
+            <h3>Ukereke Abba</h3>
+            <p class="role">Head of Design</p>
+        </div>
+
+        <!-- MEMBER 3 -->
+        <div class="trustee-card">
+            <div class="image-container">
+                <img src="images/member3.jpg" alt="Member 3">
+                <div class="overlay">
+                    <button onclick="viewMember('Nma Desmond')">View Profile</button>
+                </div>
+            </div>
+            <h3>Nma Desmond</h3>
+            <p class="role">Marketing Director</p>
+        </div>
+
+        <!-- MEMBER 4 -->
+        <div class="trustee-card">
+            <div class="image-container">
+                <img src="images/member4.jpg" alt="Member 4">
+                <div class="overlay">
+                    <button onclick="viewMember('Sarah Lee')">View Profile</button>
+                </div>
+            </div>
+            <h3>Sarah Lee</h3>
+            <p class="role">Operations Manager</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- 🎯 BUTTON -->
+<section style="text-align:center; margin: 30px;">
+    <button onclick="showMessage()">Learn More About Us</button>
+</section>
+
+<!-- 📜 FOOTER -->
+<footer>
+    <p>© 2026 ROYALty IMPERIUM Fashion House</p>
+</footer>
+
+<script src="script.js"></script>
+
+<!-- 📌 DOM STRUCTURE -->
+<!--
+Document
+ └── html
+     ├── head
+     └── body
+         ├── marquee
+         ├── header
+         ├── section (trustees)
+         │    └── grid (cards)
+         ├── section (button)
+         ├── footer
+         └── script
+-->
+
+</body>
+</html>

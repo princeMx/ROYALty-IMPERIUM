@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROYALty IMPERIUM | Board of Trustees</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<marquee>Upcoming Events: Royal Runway Show on April 20 | Style Consultation Week opens May 3 | Book your fitting today</marquee>
+
+<header>
+    <div class="logo">
+        <img src="images/logo.png" alt="ROYALty IMPERIUM logo">
+        <h1>ROYALty IMPERIUM</h1>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="trustees.html">Board</a>
+        <a href="appointments.html">Appointments</a>
+        <a href="events.html">Events</a>
+    </nav>
+</header>
+
+<section class="intro">
+    <h2>Board of Trustees</h2>
+    <p>Meet the leadership team guiding ROYALty IMPERIUM as an upcoming fashion house.</p>
+</section>
+
+<section>
+    <div class="trustees">
+        <div class="member">
+            <img src="images/member1.jpeg" alt="Michael Philip" width="150">
+            <h3>Michael Philip</h3>
+            <p>Project Manager</p>
+            <button onclick="showMember('Michael Philip')">View Profile</button>
+        </div>
+
+        <div class="member">
+            <img src="images/member2.jpeg" alt="Ukereke Abba" width="150">
+            <h3>Ukereke Abba</h3>
+            <p>Member</p>
+            <button onclick="showMember('Ukereke Abba')">View Profile</button>
+        </div>
+
+        <div class="member">
+            <img src="images/member3.jpeg" alt="Nma Desmond" width="150">
+            <h3>Nma Desmond</h3>
+            <p>Member</p>
+            <button onclick="showMember('Nma Desmond')">View Profile</button>
+        </div>
+
+        <div class="member">
+            <img src="images/member4.jpeg" alt="Bifugha Ebime" width="150">
+            <h3>Bifugha Ebime</h3>
+            <p>Member</p>
+            <button onclick="showMember('Bifugha Ebime')">View Profile</button>
+        </div>
+
+        <div class="member">
+            <img src="images/member 5.jpeg" alt="Abayomi Ezekiel Atijosan" width="150">
+            <h3>Abayomi Ezekiel Atijosan</h3>
+            <p>Member</p>
+            <button onclick="showMember('Abayomi Ezekiel Atijosan')">View Profile</button>
+        </div>
+    </div>
+</section>
+
+<section class="intro">
+    <p>Click any profile button to view a JavaScript-powered trustee message.</p>
+    <button onclick="highlightTrustees()">Highlight Trustees</button>
+    <p id="trustee-note"></p>
+</section>
+
+<section class="intro">
+    <h2>DOM Structure</h2>
+    <pre>
+Document
+|- html
+|  |- head
+|  \- body
+|     |- marquee
+|     |- header
+|     |- section.intro
+|     |- section
+|     |- section.intro
+|     |- section.intro
+|     |- footer
+|     \- script
+    </pre>
+</section>
+
+<footer>
+    <p>&copy; 2026 ROYALty IMPERIUM</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

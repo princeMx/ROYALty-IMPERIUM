@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ROYALty IMPERIUM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- 🔥 MARQUEE -->
+<marquee>🔥 ROYAL Runway Show – April 20 | Luxury Collection Out Now 🔥</marquee>
+
+<!-- 🔝 HEADER -->
+<header>
+    <div class="logo">
+        <img src="images/logo.png" alt="Logo">
+        <h1>Royalty IMPERIUM</h1>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="trustees.html">Board</a>
+        <a href="appointments.html">Appointments</a>
+        <a href="events.html">Events</a>
+    </nav>
+</header>
+
+<!-- 🎯 HERO SECTION (3 COLUMN LIKE YOUR IMAGE) -->
+<section class="hero">
+
+    <!-- LEFT -->
+    <div class="hero-box">
+        <img src="images/download.jpg" alt="Fashion">
+        <div class="overlay">
+            <h2>BE YOUR</h2>
+            <p>Luxury Starts Here</p>
+            <button onclick="showMessage()">Explore</button>
+        </div>
+    </div>
+
+    <!-- CENTER -->
+    <div class="hero-box">
+        <img src="images/righy.png" alt="Royal Outfit">
+        <div class="overlay">
+            <h2>ROYAL</h2>
+            <button onclick="showMessage()">Shop Now</button>
+        </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="hero-box">
+        <img src="images/unrelistic.jpg" alt="Suit">
+        <div class="overlay">
+            <h2>STYLE</h2>
+            <p>Define Your Class</p>
+            <button onclick="showMessage()">View More</button>
+        </div>
+    </div>
+
+</section>
+
+<!-- 👗 FEATURE SECTION -->
+<section class="intro">
+    <h2>Welcome to ROYALty IMPERIUM</h2>
+    <p>Where elegance meets your needs. We create timeless fashion for royalty.</p>
+</section>
+
+<!-- 📜 FOOTER -->
+<footer>
+    <p>© 2026 ROYALty IMPERIUM</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

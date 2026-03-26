@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROYALty IMPERIUM | Inquiries and Appointments</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<marquee>Upcoming Events: Royal Runway Show on April 20 | Style Consultation Week opens May 3 | Book your fitting today</marquee>
+
+<header>
+    <div class="logo">
+        <img src="images/logo.png" alt="ROYALty IMPERIUM logo">
+        <h1>ROYALty IMPERIUM</h1>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="trustees.html">Board</a>
+        <a href="appointments.html">Appointments</a>
+        <a href="events.html">Events</a>
+    </nav>
+</header>
+
+<section class="intro">
+    <h2>Inquiries and Appointment Bookings</h2>
+    <p>Use this page to send an inquiry or reserve a fitting appointment with our fashion house.</p>
+</section>
+
+<section class="intro">
+    <form id="appointment-form">
+        <p>
+            <label for="full-name">Full Name</label><br>
+            <input type="text" id="full-name" name="full-name" required>
+        </p>
+        <p>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" required>
+        </p>
+        <p>
+            <label for="service">Service Needed</label><br>
+            <select id="service" name="service">
+                <option>Custom Outfit</option>
+                <option>Consultation</option>
+                <option>Event Styling</option>
+            </select>
+        </p>
+        <p>
+            <label for="appointment-date">Preferred Date</label><br>
+            <input type="date" id="appointment-date" name="appointment-date" required>
+        </p>
+        <p>
+            <label for="message">Inquiry</label><br>
+            <textarea id="message" name="message" rows="4" cols="30" required></textarea>
+        </p>
+        <button type="submit">Submit Booking</button>
+    </form>
+    <p id="appointment-result"></p>
+</section>
+
+<section class="intro">
+    <h2>DOM Structure</h2>
+    <pre>
+Document
+|- html
+|  |- head
+|  \- body
+|     |- marquee
+|     |- header
+|     |- section.intro
+|     |- section.intro
+|     |- section.intro
+|     |- footer
+|     \- script
+    </pre>
+</section>
+
+<footer>
+    <p>&copy; 2026 ROYALty IMPERIUM</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
