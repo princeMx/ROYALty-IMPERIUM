@@ -14,7 +14,7 @@ function showDate() {
 }
 
 function viewProduct(productName) {
-    alert(productName + " is one of our featured fashion house products.");
+    alert(productName + " is part of the ROYALty IMPERIUM signature collection.");
 }
 
 function showProductCount() {
@@ -26,18 +26,19 @@ function showProductCount() {
 }
 
 function showMember(memberName) {
-    alert(memberName + " is part of the Board of Trustees.");
+    alert(memberName + " serves on the ROYALty IMPERIUM Board of Trustees.");
 }
 
 function highlightTrustees() {
     var members = document.querySelectorAll(".member");
     for (var i = 0; i < members.length; i++) {
-        members[i].style.border = "2px solid black";
+        members[i].style.border = "2px solid #f0c878";
         members[i].style.padding = "10px";
+        members[i].style.boxShadow = "0 0 0 1px rgba(240, 200, 120, 0.2), 0 18px 45px rgba(0, 0, 0, 0.28)";
     }
     var note = document.getElementById("trustee-note");
     if (note) {
-        note.textContent = "All trustees have been highlighted.";
+        note.textContent = "All trustees have been highlighted for emphasis.";
     }
 }
 
@@ -57,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
             var name = document.getElementById("full-name").value;
             var service = document.getElementById("service").value;
             var result = document.getElementById("appointment-result");
-            result.textContent = name + ", your " + service + " request has been received.";
+            result.textContent = name + ", your " + service + " request has been received successfully.";
             appointmentForm.reset();
         });
     }

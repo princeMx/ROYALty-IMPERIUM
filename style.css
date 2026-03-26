@@ -1,12 +1,12 @@
 :root {
-    --cream: #081426;
-    --white: #10203a;
-    --ink: #f3f7ff;
-    --soft-ink: #bed0ee;
-    --gold: #d0a85c;
-    --gold-deep: #f0c878;
-    --line: rgba(255, 255, 255, 0.12);
-    --shadow: 0 18px 45px rgba(0, 0, 0, 0.28);
+    --cream: #edf4ff;
+    --white: #ffffff;
+    --ink: #102347;
+    --soft-ink: #4c6294;
+    --gold: #3f66d4;
+    --gold-deep: #2148b8;
+    --line: rgba(16, 35, 71, 0.12);
+    --shadow: 0 18px 45px rgba(33, 72, 184, 0.14);
 }
 
 * {
@@ -17,7 +17,11 @@ body {
     margin: 0;
     font-family: Georgia, "Times New Roman", serif;
     color: var(--ink);
-    background: linear-gradient(180deg, #06101f 0%, #0a1931 45%, #0d2244 100%);
+    background: linear-gradient(180deg, #f6faff 0%, #edf4ff 48%, #e1ecff 100%);
+}
+
+main {
+    display: block;
 }
 
 img {
@@ -27,8 +31,8 @@ img {
 
 marquee {
     padding: 10px 18px;
-    background: #030812;
-    color: #eef5ff;
+    background: #2148b8;
+    color: #f8fbff;
     font-size: 0.84rem;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -36,12 +40,15 @@ marquee {
 
 /* HEADER */
 header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
     padding: 20px 5vw;
-    background: rgba(8, 20, 38, 0.95);
+    background: rgba(255, 255, 255, 0.95);
     border-bottom: 1px solid var(--line);
 }
 
@@ -83,8 +90,14 @@ nav a {
 }
 
 nav a:hover,
-nav a:focus {
+nav a:focus,
+nav a.active {
     color: var(--gold-deep);
+}
+
+nav a.active {
+    text-decoration: underline;
+    text-underline-offset: 6px;
 }
 
 button,
@@ -92,7 +105,7 @@ button,
 form button {
     padding: 12px 22px;
     border: none;
-    background: #07111f;
+    background: #2148b8;
     color: #f8fbff;
     font-family: "Trebuchet MS", Arial, sans-serif;
     font-size: 0.95rem;
@@ -115,7 +128,7 @@ button:focus,
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 0;
-    background: #020916;
+    background: #d7e4ff;
 }
 
 .hero-box {
@@ -128,7 +141,7 @@ button:focus,
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.18), rgba(2, 9, 22, 0.68));
+    background: linear-gradient(180deg, rgba(16, 35, 71, 0.12), rgba(16, 35, 71, 0.5));
 }
 
 .hero-box img {
@@ -136,6 +149,38 @@ button:focus,
     height: 100%;
     min-height: 74vh;
     object-fit: cover;
+}
+
+.brand-strip {
+    width: min(1180px, calc(100% - 36px));
+    margin: 22px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.brand-pill {
+    padding: 20px 22px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(33, 72, 184, 0.1);
+    box-shadow: var(--shadow);
+}
+
+.brand-pill span {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--gold-deep);
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.brand-pill p {
+    margin: 0;
+    color: var(--soft-ink);
+    font-family: "Trebuchet MS", Arial, sans-serif;
 }
 
 /* OVERLAY TEXT */
@@ -161,8 +206,8 @@ button:focus,
 .overlay p {
     margin: 0 0 22px;
     padding: 10px 12px;
-    border: 1px solid rgba(255, 255, 255, 0.26);
-    color: rgba(240, 246, 255, 0.86);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: rgba(246, 250, 255, 0.95);
     font-family: "Trebuchet MS", Arial, sans-serif;
     font-size: 1rem;
 }
@@ -180,9 +225,9 @@ section > .trustees {
     margin-top: 36px;
     margin-bottom: 36px;
     padding: 36px;
-    background: #10203a;
+    background: #ffffff;
     box-shadow: var(--shadow);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(33, 72, 184, 0.08);
 }
 
 .intro h2 {
@@ -204,8 +249,8 @@ label,
 pre {
     overflow-x: auto;
     padding: 22px;
-    background: #050d19;
-    color: #eef5ff;
+    background: #102347;
+    color: #eef4ff;
 }
 
 /* PRODUCTS */
@@ -224,16 +269,23 @@ pre {
 .product-card,
 .member {
     padding: 18px;
-    background: #10203a;
+    background: #ffffff;
     box-shadow: var(--shadow);
     text-align: center;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(33, 72, 184, 0.08);
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover,
+.member:hover {
+    transform: translateY(-4px);
+    border-color: rgba(240, 200, 120, 0.35);
 }
 
 .image-container {
     overflow: hidden;
     margin-bottom: 16px;
-    background: #0a1630;
+    background: #e9f1ff;
 }
 
 .image-container img,
@@ -287,8 +339,8 @@ select,
 textarea {
     width: 100%;
     padding: 12px 14px;
-    border: 1px solid rgba(255, 255, 255, 0.14);
-    background: #0b1830;
+    border: 1px solid rgba(33, 72, 184, 0.18);
+    background: #f8fbff;
     color: var(--ink);
     font-family: "Trebuchet MS", Arial, sans-serif;
 }
@@ -308,7 +360,7 @@ textarea {
 #events-list p {
     margin: 0;
     padding: 16px 18px;
-    background: #10203a;
+    background: #ffffff;
     border-left: 4px solid var(--gold);
     box-shadow: var(--shadow);
     text-align: left;
@@ -328,9 +380,33 @@ textarea {
 footer {
     margin-top: 40px;
     padding: 28px 20px;
-    background: #030812;
+    background: #102347;
     color: #eef5ff;
     text-align: center;
+}
+
+.footer-content {
+    width: min(1180px, calc(100% - 36px));
+    margin: 0 auto 18px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    text-align: left;
+}
+
+.footer-content h3,
+.footer-content p {
+    margin: 0 0 8px;
+}
+
+.footer-content h3 {
+    color: var(--gold-deep);
+    font-size: 1.1rem;
+}
+
+.footer-content p {
+    color: #d9e5ff;
+    font-family: "Trebuchet MS", Arial, sans-serif;
 }
 
 footer p {
@@ -351,6 +427,11 @@ footer p {
     }
 
     .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .brand-strip,
+    .footer-content {
         grid-template-columns: 1fr;
     }
 
@@ -391,5 +472,9 @@ footer p {
 
     .overlay h2 {
         font-size: 2.5rem;
+    }
+
+    .footer-content {
+        text-align: center;
     }
 }

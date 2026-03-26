@@ -6,7 +6,7 @@
     <title>ROYALty IMPERIUM | Products</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="page-products">
 <marquee>Upcoming Events: Royal Runway Show on April 20 | Style Consultation Week opens May 3 | Book your fitting today</marquee>
 
 <header>
@@ -17,13 +17,14 @@
 
     <nav>
         <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
+        <a href="products.html" class="active">Products</a>
         <a href="trustees.html">Board</a>
         <a href="appointments.html">Appointments</a>
         <a href="events.html">Events</a>
     </nav>
 </header>
 
+<main>
 <section class="intro">
     <h2>Product Showcase</h2>
     <p>Explore our growing collection of royal-inspired fashion pieces, premium occasion wear, and statement outfits made for standout appearances.</p>
@@ -54,12 +55,22 @@
 
         <div class="product-card">
             <div class="image-container">
-                <img src="images/COMPLETE.png" alt="Complete outfit styling package">
+                <img src="images/Nigeria Yoruba.png" alt="Nigeria Yoruba Outfit">
             </div>
-            <h3>Complete Outfit</h3>
-            <p class="category">Premium Collection</p>
+            <h3>Nigeria Yoruba Outfit</h3>
+            <p class="category">Traditional Fashion</p>
             <p class="price">$980</p>
-            <button onclick="viewProduct('Complete Outfit')">View Details</button>
+            <button onclick="viewProduct('Nigeria Yoruba Outfit')">View Details</button>
+        </div>
+
+        <div class="product-card">
+            <div class="image-container">
+                <img src="images/white igbo.jpg" alt="Nigeria Igbo Outfit">
+            </div>
+            <h3>Nigeria Igbo Outfit</h3>
+            <p class="category">Traditional Fashion</p>
+            <p class="price">$990</p>
+            <button onclick="viewProduct('Nigeria Igbo Outfit')">View Details</button>
         </div>
 
         <div class="product-card">
@@ -147,8 +158,23 @@ Document
 |     \- script
     </pre>
 </section>
+</main>
 
 <footer>
+    <div class="footer-content">
+        <div>
+            <h3>ROYALty IMPERIUM</h3>
+            <p>Collections created for bold clients and premium events.</p>
+        </div>
+        <div>
+            <p>Featured</p>
+            <p>Couture | Ceremonial Wear | Traditional Fashion</p>
+        </div>
+        <div>
+            <p>Next Step</p>
+            <p>Book a fitting through the appointments page.</p>
+        </div>
+    </div>
     <p>&copy; 2026 ROYALty IMPERIUM</p>
 </footer>
 
